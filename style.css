@@ -1,0 +1,25 @@
+
+
+nav {
+  background-color: #0A3641;
+}
+.logo img{
+  max-height: 80px;
+}
+.icon-figma {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.cta {
+  background-color: #0A3641;
+}
+
+header {
+  background-image: url("Design/Rainy days logo and photos/colton-duke-QRU0i5AqEJA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}

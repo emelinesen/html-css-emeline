@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Your go-to source for all outdoor activities">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Special+Gothic:wdth,wght@75..125,400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Fleece Jacket</title>
+  <title>Rainy Days - Home</title>
 </head>
 <body>
   <nav>
@@ -37,6 +40,35 @@
     </div>
   </nav>
   <main>
+    <breadcrumbs>
+        <a href="index.html">Home</a> / <a href="products.html">Jackets</a> / Fleece_Jacket /
+    </breadcrumbs>
+    <a href="products.html" class="back-link">←Back to jackets</a>
+    <div class="product-container">
+     <img src="images/RainyDays_Jacket7.jpg" alt="Fleece Jacket" class="product-image">
+      <div class="product-details">
+        <h2>Fleece Jacket</h2>
+        <p>Our most popular product. Loved by explorers. Made with military grade fabrics. With lifetime warranty.</p>
+        <p>100% polyester </p>
+        <p class="price">1299,-</p>
+        <fieldset class="size-options">
+          <div>
+            <input type="checkbox" id="small" name="small" checked />
+            <label for="small">Small</label>
+          </div>
+          <div>
+            <input type="checkbox" id="medium" name="medium" />
+            <label for="medium">Medium</label>
+          </div>
+          <div>
+            <input type="checkbox" id="large" name="large" />
+            <label for="large">Large</label>
+          </div>
+        </fieldset>
+        <button class="cta">ADD TO CART</button>
+      </div>
+    </div>
+  </main>
   <footer>
     <div class="footer-right">
       <a href="index.html" class="logo">

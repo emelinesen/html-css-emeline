@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Your go-to source for all outdoor activities">
+  <meta name="description" content="Payment">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Special+Gothic:wdth,wght@75..125,400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Checkout</title>
+  <title>Payment</title>
 </head>
 <body>
   <nav>
@@ -37,7 +40,40 @@
     </div>
   </nav>
   <main>
-  <footer>
+    <breadcrumbs>
+      <a href="index.html">Home</a> /
+      <a href="products.html">Products</a> /
+      <a href="cart.html">Shopping bag</a> /
+      <span>Payment</span>
+    </breadcrumbs>
+    <a href="cart.html" class="back-link">←Back to Shopping Bag</a>
+    <h2>Payment</h2>
+      <form action="" method="get" class="payment-form">
+        <div class="shipping-form">
+          <h4>Shipping Information</h4>
+          <input type="text" name="name" id="name" placeholder="Full Name" required />
+          <input type="email" name="email" id="email" placeholder="Email Address" required />
+          <input type="text" name="adress" id="adress" placeholder="Shipping Address" required />
+          <input type="text" name="zip" id="zip" placeholder="ZIP Code" required />
+        </div>
+        <div class="payment-form">
+          <h4>Card Information</h4>
+          <input type="text" id="card-number" name="card-number" required placeholder="Card number">
+          <input type="text" id="expiry-date" name="expiry-date" placeholder="Expiry date" required>
+          <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+        </div>
+      </form>
+      <div class="total"> 
+        <p>Fleece jacket</p>
+        <p>Kr 1299</p>
+        <p>Shipping</p>
+        <p>Free</p>
+        <p>Total</p>
+        <p>Kr 1299</p>
+      </div>
+      <a href="thank-you.html" class="cta" >Complete Payment</a>
+  </main>
+   <footer>
     <div class="footer-right">
       <a href="index.html" class="logo">
       <img src="images/RainyDays_Logo.png" alt="Rainy Days Logo">

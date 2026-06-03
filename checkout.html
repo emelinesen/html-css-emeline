@@ -13,7 +13,7 @@
 <body>
   <nav>
     <div class="nav-left">
-      <a href="index.html" class="logo">
+      <a href="index.html" class="logo" aria-label="Back to homepage">
         <img src="images/RainyDays_Logo.png" alt="Rainy Days Logo">
       </a>
     </div>
@@ -27,25 +27,25 @@
       <p>/ All new members get 15% off / Free shipping on all orders over kr 799 /</p>
     </div>
     <div class="nav-right">
-      <div class="shop">
+      <div class="shopping-cart-link">
       <a href="cart.html"  class="nav-link"> Shopping bag  </a>
-      <a href="cart.html" >
+      <a href="cart.html" aria-label="Go to Shopping Bag">
         <img src="images/shopping.png" alt="Shopping Bag Icon">
       </a>
       </div>
-      <search>
+      <form class="search" role="search">
         <img src="images/search.png" alt="Search Icon">
-        <input type="text" placeholder="Search...">
-      </search>
+        <input type="search" placeholder="Search" aria-label="Search the website">
+      </form>
     </div>
   </nav>
   <main>
-    <breadcrumbs>
+    <div class="breadcrumbs">
       <a href="index.html">Home</a> /
       <a href="products.html">Products</a> /
       <a href="cart.html">Shopping bag</a> /
       <span>Payment</span>
-    </breadcrumbs>
+    </div>
     <a href="cart.html" class="back-link">←Back to Shopping Bag</a>
     <h2>Payment</h2>
       <form action="" method="get" class="payment-form">
@@ -65,11 +65,12 @@
       </form>
       <div class="total"> 
         <p>Fleece jacket</p>
-        <p>Kr 1299</p>
+        <p class="price">Kr 1 299</p>
         <p>Shipping</p>
-        <p>Free</p>
-        <p>Total</p>
-        <p>Kr 1299</p>
+        <p class="price">Free</p>
+        <div class="divider-total"></div>
+        <h4>Total</h4>
+        <h4 class="price">Kr 1 299</h4>
       </div>
       <a href="thank-you.html" class="cta" >Complete Payment</a>
   </main>

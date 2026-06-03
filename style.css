@@ -344,6 +344,7 @@ header div {
   flex-direction: row;
   gap: 15px;
   margin-bottom: 50px;
+  justify-content: center;
 }
 
 .story-image {
@@ -367,7 +368,7 @@ padding-top: 0px;
   top: -20px;
 }
 
-/* Product Specific */
+/* fleece-jacket */
 
 .size-options {
   border: none;
@@ -377,7 +378,9 @@ padding-top: 0px;
   margin-top: 90px;
   position: relative;
   left: -20px;
+  font-size: 18px;
 }
+
 
 .product-container {
  position: relative;  
@@ -402,7 +405,7 @@ padding-top: 0px;
 
 /* Cart */
 
-.cart-container {
+.cart-container, .checkout-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 150px;
@@ -522,7 +525,7 @@ opacity: 0.4;
 .total p {
   margin: 0;
 }
-.cart-container .cta {
+.cart-container .cta, .checkout-content .cta {
   width: fit-content;
   position: relative;
   left: 120px;
@@ -531,8 +534,44 @@ opacity: 0.4;
 
 /* Checkout */
 
+.payment-form  {
+  width: 500px;
+  align-items: start;
+}
 
+.payment-form input {
+  background-color: #D9D9D9;
+  border: 1px solid black;
+  opacity: 0.5;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4) ;
+}
 
+.checkout-content p {
+  font-family: var(--font-family-header);
+  font-weight: 300;
+  color: var(--primary-color);
+  letter-spacing: -0.04em;
+  font-size: 16px;
+  margin: 0;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.card-row {
+  display: flex;
+  gap: 10px 
+}
+
+.card-row #expiry-date {
+  flex: 2;
+}
+.card-row #cvc {
+  flex: 1;
+}
 /* Thank You */
 
 .confirmation-main {
@@ -552,8 +591,8 @@ background-position: top;
 
 /* Huskeliste
 
-checkboksene må endre så man bare kan velge en, radio buttons?
-gjøre responsivt
+
+gjøre forside og produktsside responsivt
 
 progress dots
 <div class="progress">
@@ -563,7 +602,5 @@ progress dots
 </div>
 
 Fikse footer, den er for lang noen steder
-Åpne linker i ny fane
-Legge til tilbake knapp på coming soon, eller må man velge den spsifikk side
 */
  

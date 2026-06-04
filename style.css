@@ -17,12 +17,12 @@ main  {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 320px;
-  margin-right: 320px;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
 nav, footer {
-  background-color: #0A3641;
+  background-color: var(--primary-color);
 }
 
 nav {
@@ -121,9 +121,8 @@ nav ul {
   font-weight: 450;
   margin-bottom: 20px;
   color: var(--secondary-color);
-  position: relative;
-  right: 310px;
-  top: 10px;
+  background-color: var(--primary-color);
+  padding-left: 5px;
 }
 
  .breadcrumbs a {
@@ -155,6 +154,7 @@ nav ul {
   letter-spacing: -0.0em;
   white-space: nowrap;
 }
+
 
 .cta:hover {
   background-color: var(--primary-color);
@@ -210,7 +210,8 @@ nav ul {
 } 
 
 .product-card button {
-align-self: stretch;
+align-self: center;
+width: 100%;
 }
 
 h1 {
@@ -289,6 +290,7 @@ footer a {
   align-items: flex-end;
   align-content: flex-end;
   gap: 2px;
+  padding-right: 20px;
 }
 
 .footer-left img {
@@ -339,7 +341,7 @@ header div {
 } 
 
 .carousel-container {
-  width: 130%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   gap: 15px;
@@ -558,6 +560,7 @@ opacity: 0.4;
 .payment-form  {
   width: 500px;
   align-items: start;
+  margin-top: -25px;
 }
 
 .payment-form input {
@@ -598,30 +601,59 @@ opacity: 0.4;
 .confirmation-main {
 background-image: url("images/thank-you.jpg");
 background-size: cover;
-background-position: top;
+background-position: center 60%;
+height: 700px;
+position: relative;
+bottom: 20px;
+margin-bottom: -50px;
 }
 
 .confirmation-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  padding-top: 300px;
+  gap: 0px;
+  margin-top: 220px;
+  margin-bottom: 150px;
+  padding-bottom: 30px;
+  width: 80%;
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.confirmation-container h2 {
+  font-size: 50px;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.confirmation-container p {
+  font-family: var(--font-family-header);
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  margin: 10px;
+}
+
+.confirmation-container a {
+  color: var(--primary-color);
+}
+
+.social-media-confirmation {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-left: 20px;
+}
+.social-media-confirmation a {
+  text-decoration: none;
 }
 
 /* Huskeliste
 
-
-gjøre forside og produktsside responsivt
-
-progress dots
-<div class="progress">
-  <span class="dot"></span>
-  <span class="dot active"></span>
-  <span class="dot"></span>
-</div>
-
+thank you side
+gjøre responsivt
 Fikse footer, den er for lang noen steder
+er ikke nok kontrast på breadcrumbs
 */
  

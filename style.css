@@ -402,8 +402,29 @@ padding-top: 0px;
  font-weight: 300;
 }
 
-
 /* Cart */
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: rgb(232, 232, 232);
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: rgb(185, 185, 185);
+}
+
+.dot.active {
+  background-color: var(--secondary-color);
+}
 
 .cart-container, .checkout-content {
   display: grid;

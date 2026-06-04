@@ -39,6 +39,25 @@ nav {
   margin-bottom: 0px;
 }
 
+.nav-toggle {
+  display: none;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px;
+  align-self: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #FFF;
+}
+
 .nav-middleleft, .nav-middleright, .nav-right {
   display: flex;
   align-self: flex-end;
@@ -361,6 +380,7 @@ header div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  width: 100%;
 } 
 
 .products-title {
@@ -649,11 +669,274 @@ margin-bottom: -50px;
   text-decoration: none;
 }
 
-/* Huskeliste
+@media (max-width: 1024px) {
 
-thank you side
-gjøre responsivt
-Fikse footer, den er for lang noen steder
-er ikke nok kontrast på breadcrumbs
+  main {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .nav-middleright {
+    display: none;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cart-container, .checkout-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .summary, .total {
+    width: 100%;
+    height: auto;
+  }
+
+  .total {
+    padding: 20px;
+  }
+
+  .divider-total {
+    width: 100%;
+  }
+
+  .cart-container .cta, .checkout-content .cta {
+    left: 0;
+    bottom: 0;
+  }
+
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+  }
+
+  .product-container img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .payment-form {
+    width: 100%;
+  }
+
+  .back-link {
+    left: 0;
+  }
+
+}
+
+@media (max-width:786px) {
+main {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.nav-middleright, .search, .back-link, .shopping-cart-link a.nav-link  {
+  display: none;
+}
+
+.nav-middleleft {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 99;
+}
+
+.nav-middleleft ul {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav-toggle:checked ~ .nav-middleleft {
+  display: flex;
+}
+
+.shopping-cart-link {
+  order: 1;
+  scale: 1.5;
+}
+.hamburger {
+  display: flex;
+  margin-left: 0;
+  margin-right: 10px;
+  scale: 1.5;
+  order: 2;
+}
+
+nav {
+  gap: 10px;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  margin-left: auto;
+}
+
+h1 {
+  font-size: 48px;
+}
+h2  {
+  font-size: 32px;
+  white-space: normal;
+}
+
+.breadcrumbs {
+  display: none;
+}
+
+header {
+  min-height: 400px;
+}
+
+header div {
+  padding-left: 20px;
+  padding-top: 250px;
+  gap: 15px;
+  align-items: center;
+}
+
+.cta-hero {
+  font-size: 18px;
+  padding: 8px 30px;
+  left: 0;
+}
+
+.product-grid {
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.product-card {
+  width: 100%;
+  max-width: 200px;
+}
+
+.carousel-container {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.carousel-container .product-card {
+  width: 40%;
+}
+
+.product-container {
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+.product-details .cta {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.size-options {
+  margin-top: 20px;
+}
+
+.cart-container, .checkout-content {
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.summary, .total {
+  width: 100%;
+  height: auto;
+}
+
+.total {
+  padding: 20px;
+}
+
+.summary {
+  flex-direction: column;
+ 
+}
+
+.summary img {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.quantity {
+  position: static;
+}
+
+.summary-content h3, .summary-content p {
+  position: static;
+}
+
+.carousel-container .cta, .checkout-content .cta {
+  position: static;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.progress {
+  margin-top: 0;
+}
+
+.payment-form {
+  width: 100%;
+}
+
+footer {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.footer-right {
+  order: 2;
+}
+.footer-middle {
+  order: 1;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.footer-left {
+  order: 3;
+  align-items: flex-end; 
+  padding-right: 0;
+}
+}
+
+
+/* Huskeliste
+må endre skriftstørrelser og evt til em istedefor px
+har gjort responsivt til tablet, ikke mobil. fortsatt en del ting som ikke ser bra ut i tablet
+mobil:
+må flytte hamburgermenu og icon 
+få headerbildet til å forskyves litt
+kan teskten på herobildet endre seg på mobilverson?
+produkt grid, cardsene er for store
+cta på fleece er ikke cetrert. cta på payment siden er for lang
+.summary img blir ikke centrert
+mye gap i summary
+Footeren er feil, alt skal fortstt være på linje, men logo sakl flyttes i midten
+
 */
  

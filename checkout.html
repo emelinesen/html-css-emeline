@@ -72,15 +72,16 @@
         <span class="dot active"></span>
       </div>
       <div class="checkout-content">
-        <form action="" method="get" class="payment-form">
+        <form action="thank-you.html" method="get" class="payment-form">
           <div class="shipping-form">
-            <p>Shipping Information</p>
+            <h2>Shipping Information</h2>
             <input
               type="text"
               name="name"
               id="name"
               placeholder="Full Name"
               required
+              aria-label="Full Name"
             />
             <input
               type="email"
@@ -88,6 +89,7 @@
               id="email"
               placeholder="Email Address"
               required
+              aria-label="Email Address"
             />
             <input
               type="text"
@@ -95,6 +97,7 @@
               id="adress"
               placeholder="Shipping Address"
               required
+              aria-label="Shipping Address"
             />
             <input
               type="text"
@@ -102,24 +105,27 @@
               id="zip"
               placeholder="ZIP Code"
               required
+              aria-label="ZIP Code"
             />
           </div>
           <div class="card-form">
-            <p>Card Information</p>
+            <h2>Card Information</h2>
             <input
               type="text"
               id="card-number"
               name="card-number"
               required
-              placeholder="Card number"
+              placeholder="Card Number"
+              aria-label="Card number"
             />
             <div class="card-row">
               <input
                 type="text"
                 id="expiry-date"
                 name="expiry-date"
-                placeholder="Expiry date"
+                placeholder="Expiry Date"
                 required
+                aria-label="Expiry date"
               />
               <input
                 type="text"
@@ -127,6 +133,7 @@
                 name="cvc"
                 placeholder="CVC"
                 required
+                aria-label="CVC"
               />
             </div>
           </div>
@@ -137,8 +144,8 @@
           <p>Shipping</p>
           <p class="price">Free</p>
           <div class="divider-total"></div>
-          <h4>Total</h4>
-          <h4 class="price">Kr 1 299</h4>
+          <h3>Total</h3>
+          <h3 class="price">Kr 1 299</h3>
         </div>
         <a href="thank-you.html" class="cta">COMPLETE PAYMENT</a>
       </div>

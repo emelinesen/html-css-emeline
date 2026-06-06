@@ -155,6 +155,7 @@ nav ul {
 .back-link {
  position: relative; 
   left: 400px;
+  top: 70px;
   color: var(--primary-color);
   text-decoration: none;
   font-style: italic;
@@ -235,7 +236,7 @@ align-self: center;
 width: 100%;
 }
 
-h1, h3, h4 {
+h1, h2, h3 {
   font-family: var(--font-family-header);
   letter-spacing: var(--letter-spacing-tight);
   color: var(--primary-color);
@@ -250,13 +251,13 @@ h1 {
   white-space: nowrap;
 }
 
-h3    {
+h2    {
   font-size: 24px; 
     font-weight: 500;
   margin-top: 0;
 }
 
-h4 {
+h3 {
   font-size: 20px; 
     font-weight: 500;
   margin-top: 0;
@@ -534,7 +535,7 @@ opacity: 0.4;
   height: 100%;
 }
 
-.summary-content h3, .summary-content p {
+.summary-content h2, .summary-content p {
   position: relative;
   top: 25px;
 }
@@ -950,7 +951,7 @@ header div {
   align-self: flex-end;
 }
 
-.summary-content h3, .summary-content p {
+.summary-content h2, .summary-content p {
   position: static;
 }
 

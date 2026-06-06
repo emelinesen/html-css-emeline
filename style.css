@@ -253,7 +253,7 @@ h1 {
 
 h2    {
   font-size: 24px; 
-    font-weight: 500;
+  font-weight: 500;
   margin-top: 0;
 }
 
@@ -402,10 +402,14 @@ padding-top: 0px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 90px;
+  
   position: relative;
   left: -20px;
   font-size: 18px;
+}
+
+.product-details .price {
+  margin-bottom: 90px;
 }
 
 
@@ -665,6 +669,41 @@ margin-bottom: -50px;
 }
 .social-media-confirmation a {
   text-decoration: none;
+}
+
+/* Coming Soon */
+
+.overlay-card {
+  border: 4px solid var(--primary-color);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 600px;
+}
+
+.overlay-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.overlay-cta {
+  width: 100%;
+  text-align: center;
+}
+
+.overlays {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin: 40px 0;
+  gap: 40px; 
+  align-items: start;
+}
+
+article.overlay-size .size-options {
+  margin-top: 0;
+
 }
 
 @media (max-width: 1200px) {

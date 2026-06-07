@@ -4,7 +4,9 @@
   --secondary-color: #FF8041;
   --font-family-header: 'Inter', sans-serif;
   --font-family-body: 'Special Gothic', sans-serif;
-  --letter-spacing-tight: -0.04em
+  --letter-spacing-tight: -0.04em;
+  --border-primary: 5px solid var(--primary-color);
+  --border-secondary: 5px solid var(--secondary-color); 
 }
 
 body {
@@ -167,7 +169,7 @@ nav ul {
 .cta {
   background-color: #ffffff;
   color: var(--primary-color);
-  border: 4px solid var(--primary-color);
+  border: var(--border-primary);
   font-style: italic;
   text-decoration: none;
   padding: 8px ;
@@ -179,7 +181,7 @@ nav ul {
 
 .cta:hover {
   background-color: var(--primary-color);
-  border: 3px solid var(--primary-color);
+  border: var(--border-primary);
   color: #FFF;
 }
 
@@ -187,6 +189,7 @@ nav ul {
 .product-card {
   box-shadow: 0px 2px 5px rgb(230, 230, 230);
   width: 100%;
+  max-width: 200px;
   height: auto;
   overflow: hidden;
   display: flex;
@@ -197,7 +200,7 @@ nav ul {
 
 .product-card:hover  {
   box-shadow: 0px 4px 10px gray;
-  border: 5px solid white;
+  
   transform: scale(1.05);
 }
 
@@ -218,7 +221,7 @@ nav ul {
   color: var(--primary-color);
   font-family: var(--font-family-body);
   letter-spacing: -0.04em;
-  font-size: 12px;
+  font-size: 16px;
   display: flex;
   justify-content: space-between;
 }
@@ -231,6 +234,7 @@ nav ul {
 .product-card button {
 align-self: center;
 width: 100%;
+margin-bottom: 5px;
 }
 
 h1, h2, h3 {
@@ -330,7 +334,7 @@ footer p {
   font-size: 29px; 
   padding: 3px 120px;
   text-decoration: none;
-  border: 5px solid var(--secondary-color);
+  border: var(--border-secondary);
 }
 
 .cta-hero:hover {
@@ -665,7 +669,7 @@ margin-bottom: -50px;
 /* Coming Soon */
 
 .overlay-card {
-  border: 5px solid var(--primary-color);
+  border: var(--border-primary);
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -745,7 +749,7 @@ article.overlay-size .size-options {
 
   .product-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 17px;
   }
 
   .product-card {
@@ -800,7 +804,7 @@ article.overlay-size .size-options {
 
 }
 
-@media (max-width:786px) {
+@media (max-width:768px) {
 main {
   margin-left: 20px;
   margin-right: 20px;
@@ -814,7 +818,7 @@ main {
   display: none;
   position: absolute;
   top: 112px;
-  left: 65%;
+  right: 0;
   width: 45%;
   gap: 0;
   background-color: var(--primary-color);

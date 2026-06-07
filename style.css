@@ -619,8 +619,6 @@ background-image: url("images/thank-you.jpg");
 background-size: cover;
 background-position: center 60%;
 height: 700px;
-position: relative;
-bottom: 20px;
 margin-bottom: -50px;
 }
 
@@ -997,10 +995,16 @@ header div {
 
 .progress {
   margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .payment-form {
   width: 100%;
+}
+
+.confirmation-main {
+  height: auto;
+  flex: none;
 }
 
 footer {
@@ -1037,7 +1041,7 @@ footer .logo img {
 }
 
 .confirmation-container {
-margin-top: 430px;
+margin-top: 300px;
 }
 
 }
